@@ -72,11 +72,12 @@ jobs:
       # - name: Image digest
       #   run: echo ${{ steps.docker_build.outputs.digest }}
 
-      - name: Push changes to production
+      
   deploy:
+    name: Push changes to production
     runs-on: ubuntu-latest
     needs: [build]
 
     steps:
-    - name: deploying stuff
-      run: echo "going for deployment"
+      - name: deploying stuff
+        run: echo "going for deployment"
