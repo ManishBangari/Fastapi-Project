@@ -81,3 +81,11 @@ jobs:
     steps:
       - name: deploying stuff
         run: echo "going for deployment"
+
+      # - name: Deploy to Render
+      #   run: |
+      #     curl "$RENDER_DEPLOY_HOOK_URL"
+      #   env:
+      #     RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
+
+    
