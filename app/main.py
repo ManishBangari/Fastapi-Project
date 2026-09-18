@@ -31,7 +31,7 @@ app.add_middleware(
 # request get method in "/" url
 @app.get("/")
 def root():
-    return {"message": "welcome to the FastAPI application! :]"}
+    return {"message": "welcome to the FastAPI"}
 
 app.include_router(post.router)
 app.include_router(users.router)
